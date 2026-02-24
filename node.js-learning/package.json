@@ -1,0 +1,17 @@
+{
+  "name": "node.js-learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "basics.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "commonjs",
+  "license": "ISC",
+  "dependencies": {
+    "color": "^5.0.3",
+    "node.js": "^0.0.1-security"
+  }
+}
