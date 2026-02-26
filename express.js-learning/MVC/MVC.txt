@@ -1,0 +1,6 @@
+MVC
+=> In , MVC M stands for Models , V stands for views , C stand for Controller
+=> Here , Models contain Data related thing or it store data 
+=> Here , views contain UI code 
+=> Here , Controller control the Models and views
+=> Here , we also make index.js for get request 
