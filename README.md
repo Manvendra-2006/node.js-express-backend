@@ -188,6 +188,3 @@ node basic-server.js
 
 ---
 
-## 👨‍💻 Author
-
-> Learning Node.js & Express.js — one file at a time. 🚀
