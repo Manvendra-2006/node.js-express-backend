@@ -58,54 +58,71 @@ node.js-express-backend/
 │   ├── package.json
 │   └── package-lock.json
 │
-└── node.js-learning/                  # Node.js core concepts
+├── node.js-learning/                  # Node.js core concepts
+│   │
+│   ├── 📂 Component/                  # Reusable Node components
+│   │   ├── root.js                    # Root component
+│   │   ├── userDataSubmitted.js       # User data handler
+│   │   └── userForm.js                # User form component
+│   │
+│   ├── 📂 CoreModule/                 # Built-in Node.js modules
+│   │   ├── OsModule.js                # OS module usage
+│   │   ├── PathModule.js              # Path module usage
+│   │   ├── fs.js                      # File System module
+│   │   └── queryString.js             # Query String module
+│   │
+│   ├── 📂 ExternalModule/             # npm packages
+│   │   ├── colors.js                  # colors package demo
+│   │   └── nodemon.js                 # nodemon usage
+│   │
+│   ├── 📂 GlobalConstants/            # Node.js global variables
+│   │   └── constant.js                # __dirname, __filename etc.
+│   │
+│   ├── 📂 MiniProject/                # Mini project
+│   │   └── website.js                 # Simple Node.js website
+│   │
+│   ├── 📂 file/                       # Static HTML files
+│   │   ├── About.html
+│   │   ├── Contact.html
+│   │   ├── Header.html
+│   │   ├── Home.html
+│   │   ├── Service.html
+│   │   ├── hello.txt
+│   │   └── style.css
+│   │
+│   ├── 📂 html/                       # HTML data files
+│   │   └── data.html
+│   │
+│   ├── API.js                         # API creation basics
+│   ├── BasicForm.js                   # Basic form in Node.js
+│   ├── HandleForm.js                  # Form data handling
+│   ├── Request.js                     # HTTP Request handling
+│   ├── Response.js                    # HTTP Response handling
+│   ├── SyncVSAsync.js                 # Synchronous vs Asynchronous
+│   ├── app.js                         # App entry point
+│   ├── basic-server.js                # Basic HTTP server
+│   ├── basics.js                      # Node.js fundamentals
+│   ├── command-line-input.js          # CLI input handling
+│   ├── fsCrud.js                      # File System CRUD operations
+│   ├── package.json
+│   └── package-lock.json
+│
+└── MongoDB-Connection/                # MongoDB & Mongoose integration
     │
-    ├── 📂 Component/                  # Reusable Node components
-    │   ├── root.js                    # Root component
-    │   ├── userDataSubmitted.js       # User data handler
-    │   └── userForm.js                # User form component
+    ├── 📂 Mongoose/                   # Mongoose ODM examples
+    │   ├── Model/
+    │   │   └── StudentModel.js        # Mongoose student model
+    │   ├── Schema/
+    │   │   └── StudentSchema.js       # Mongoose student schema
+    │   ├── DeleteAPI.js               # DELETE route with Mongoose
+    │   ├── GETAPI.js                  # GET route with Mongoose
+    │   ├── Mongoose.js                # Mongoose connection setup
+    │   ├── POSTAPI.js                 # POST route with Mongoose
+    │   └── PUTAPI.js                  # PUT route with Mongoose
     │
-    ├── 📂 CoreModule/                 # Built-in Node.js modules
-    │   ├── OsModule.js                # OS module usage
-    │   ├── PathModule.js              # Path module usage
-    │   ├── fs.js                      # File System module
-    │   └── queryString.js             # Query String module
-    │
-    ├── 📂 ExternalModule/             # npm packages
-    │   ├── colors.js                  # colors package demo
-    │   └── nodemon.js                 # nodemon usage
-    │
-    ├── 📂 GlobalConstants/            # Node.js global variables
-    │   └── constant.js                # __dirname, __filename etc.
-    │
-    ├── 📂 MiniProject/                # Mini project
-    │   └── website.js                 # Simple Node.js website
-    │
-    ├── 📂 file/                       # Static HTML files
-    │   ├── About.html
-    │   ├── Contact.html
-    │   ├── Header.html
-    │   ├── Home.html
-    │   ├── Service.html
-    │   ├── hello.txt
-    │   └── style.css
-    │
-    ├── 📂 html/                       # HTML data files
-    │   └── data.html
-    │
-    ├── API.js                         # API creation basics
-    ├── BasicForm.js                   # Basic form in Node.js
-    ├── HandleForm.js                  # Form data handling
-    ├── Request.js                     # HTTP Request handling
-    ├── Response.js                    # HTTP Response handling
-    ├── SyncVSAsync.js                 # Synchronous vs Asynchronous
-    ├── app.js                         # App entry point
-    ├── basic-server.js                # Basic HTTP server
-    ├── basics.js                      # Node.js fundamentals
-    ├── command-line-input.js          # CLI input handling
-    ├── fsCrud.js                      # File System CRUD operations
-    ├── package.json
-    └── package-lock.json
+    ├── .gitignore
+    ├── package-lock.json
+    └── package.json
 ```
 
 ---
@@ -140,6 +157,17 @@ node.js-express-backend/
 | Template Engine (EJS) | `TemplateEngine/` |
 | MVC Architecture | `MVC/` |
 
+### 🍃 MongoDB (`MongoDB-Connection/`)
+| Topic | File(s) |
+|-------|---------|
+| Mongoose Connection | `Mongoose/Mongoose.js` |
+| Schema Definition | `Mongoose/Schema/StudentSchema.js` |
+| Model Creation | `Mongoose/Model/StudentModel.js` |
+| GET API | `Mongoose/GETAPI.js` |
+| POST API | `Mongoose/POSTAPI.js` |
+| PUT API | `Mongoose/PUTAPI.js` |
+| DELETE API | `Mongoose/DeleteAPI.js` |
+
 ---
 
 ## 🛠️ Getting Started
@@ -147,6 +175,7 @@ node.js-express-backend/
 ### Prerequisites
 - [Node.js](https://nodejs.org/) (v14 or higher)
 - npm (comes with Node.js)
+- [MongoDB](https://www.mongodb.com/) (local or Atlas)
 
 ### Installation
 
@@ -161,6 +190,10 @@ npm install
 # OR navigate to Node.js learning folder
 cd node.js-express-backend/node.js-learning
 npm install
+
+# OR navigate to MongoDB connection folder
+cd node.js-express-backend/MongoDB-Connection
+npm install
 ```
 
 ### Running Examples
@@ -174,6 +207,9 @@ node index.js
 
 # Example: Run basic Node.js server
 node basic-server.js
+
+# Example: Run Mongoose connection
+node Mongoose/Mongoose.js
 ```
 
 ---
@@ -182,9 +218,10 @@ node basic-server.js
 
 - **Runtime:** Node.js
 - **Framework:** Express.js
+- **Database:** MongoDB
+- **ODM:** Mongoose
 - **Template Engine:** EJS
 - **Architecture:** MVC Pattern
 - **Dev Tools:** Nodemon
 
 ---
-
