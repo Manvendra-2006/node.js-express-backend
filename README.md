@@ -177,7 +177,14 @@ node.js-express-backend/
 | POST API | `Mongoose/POSTAPI.js` |
 | PUT API | `Mongoose/PUTAPI.js` |
 | DELETE API | `Mongoose/DeleteAPI.js` |
-
+| GET API (UI) | `MongoDB/GETAPI.js` |
+| POST API (UI) | `MongoDB/POSTAPI.js` |
+| Edit API (UI) | `MongoDB/EDITAPI.js` |
+| DELETE API (UI) | `MongoDB/DELETEAPI.js` |
+| Render Form Data | `MongoDB/RenderFormData.js` |
+| Data UI Render | `MongoDB/DataUI.js` |
+| EJS Views | `MongoDB/views/home.ejs`, `MongoDB/views/form.ejs` |
+| Entry Point (UI) | `MongoDB/index.js` |
 ---
 
 ## 🛠️ Getting Started
