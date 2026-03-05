@@ -120,11 +120,21 @@ node.js-express-backend/
     │   ├── POSTAPI.js                 # POST route with Mongoose
     │   └── PUTAPI.js                  # PUT route with Mongoose
     │
+    ├── 📂 MongoDB/                    # MongoDB with EJS UI (Full CRUD)
+    │   ├── views/
+    │   │   ├── form.ejs               # Form to add/edit student data
+    │   │   └── home.ejs               # Homepage listing all records
+    │   ├── DELETEAPI.js               # DELETE route handler
+    │   ├── DataUI.js                  # Render data to UI
+    │   ├── EDITAPI.js                 # Edit/update route handler
+    │   ├── GETAPI.js                  # GET route handler
+    │   ├── POSTAPI.js                 # POST route handler
+    │   ├── RenderFormData.js          # Render form with existing data
+    │   └── index.js                   # MongoDB section entry point
+    │
     ├── .gitignore
     ├── package-lock.json
     └── package.json
-```
-
 ---
 
 ## 📚 Topics Covered
@@ -167,7 +177,14 @@ node.js-express-backend/
 | POST API | `Mongoose/POSTAPI.js` |
 | PUT API | `Mongoose/PUTAPI.js` |
 | DELETE API | `Mongoose/DeleteAPI.js` |
-
+| GET API (UI) | `MongoDB/GETAPI.js` |
+| POST API (UI) | `MongoDB/POSTAPI.js` |
+| Edit API (UI) | `MongoDB/EDITAPI.js` |
+| DELETE API (UI) | `MongoDB/DELETEAPI.js` |
+| Render Form Data | `MongoDB/RenderFormData.js` |
+| Data UI Render | `MongoDB/DataUI.js` |
+| EJS Views | `MongoDB/views/home.ejs`, `MongoDB/views/form.ejs` |
+| Entry Point (UI) | `MongoDB/index.js` |
 ---
 
 ## 🛠️ Getting Started
