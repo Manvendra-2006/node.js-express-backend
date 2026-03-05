@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/student-edit/<%= Data._id%>" method="post">
+        <label for="">Name</label>
+        <input type="text" placeholder="Enter text" id="100" name="name" value="<%= Data.name%>">
+        <label for="">subject</label>
+        <input type="text" placeholder="Enter class" id= "200" name="subject" value="<%= Data.subject%>">
+        <label for="">Classes</label>
+        <input type="text" placeholder="Enter subject" id="2300" name="classes" value="<%= Data.classes%>">
+        <button  type="submit">Submit</button>
+    </form>
+</body>
+</html>

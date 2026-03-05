@@ -19,8 +19,9 @@
             <td> <%= item.name%></td>
             <td><%= item.classes%></td>
             <td> <%= item.subject%></td>     
-                <td><button>Edit</button></td>
-                <td><button>Delete</button></td>
+            <td><%= item._id%></td>
+                <td><button><a href="/edit-student/<%= item._id%>">Edit</a></button></td>
+                <td><a href="/delete-student/<%= item._id%>">Delete</a></td>
         </tbody>
        </table>       
         <%})%>
