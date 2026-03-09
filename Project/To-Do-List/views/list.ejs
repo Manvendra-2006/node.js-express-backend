@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+</head>
+<body>
+    <%- include('navbar')%>
+    <hr>
+    <h1>List Task</h1>
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>TaskTittle</th>
+            <th>TaskDescription</th>
+            <th>Delete</th>
+        </thead>
+ 
+    <%if(data && data.length>0){%>
+        <% data.map((item)=>{%>
+            <tbody>
+                <td><%= item._id%></td>
+                <td> <%= item.tasktittle%></td>
+                <td> <%= item.description%></td>
+                <td><a href="/delete/<%= item._id%>">Delete</a></td>
+                <td><a href="/edit/<%= item._id%>">Edit </a></td>
+            </tbody>                                  
+            <%})%>
+        <%}%>
+           </table>
+</body>
+</html>
