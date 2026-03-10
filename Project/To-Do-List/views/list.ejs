@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task List</title>
+        <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
     <%- include('navbar')%>
     <hr>
     <h1>List Task</h1>
+    <form action="multi-delete" method="post">
+        <button>Deleted Selected Task</button>
     <table>
         <thead>
             <th>ID</th>
@@ -23,11 +26,13 @@
                 <td><%= item._id%></td>
                 <td> <%= item.tasktittle%></td>
                 <td> <%= item.description%></td>
+                <td><input type="checkbox" name="selectedtask" value="<%= item._id%>"></td>
                 <td><a href="/delete/<%= item._id%>">Delete</a></td>
                 <td><a href="/edit/<%= item._id%>">Edit </a></td>
             </tbody>                                  
             <%})%>
         <%}%>
            </table>
+           </form>
 </body>
 </html>
