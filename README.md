@@ -107,34 +107,51 @@ node.js-express-backend/
 │   ├── package.json
 │   └── package-lock.json
 │
-└── MongoDB-Connection/                # MongoDB & Mongoose integration
+├── MongoDB-Connection/                # MongoDB & Mongoose integration
+│   │
+│   ├── 📂 Mongoose/                   # Mongoose ODM examples
+│   │   ├── Model/
+│   │   │   └── StudentModel.js        # Mongoose student model
+│   │   ├── Schema/
+│   │   │   └── StudentSchema.js       # Mongoose student schema
+│   │   ├── DeleteAPI.js               # DELETE route with Mongoose
+│   │   ├── GETAPI.js                  # GET route with Mongoose
+│   │   ├── Mongoose.js                # Mongoose connection setup
+│   │   ├── POSTAPI.js                 # POST route with Mongoose
+│   │   └── PUTAPI.js                  # PUT route with Mongoose
+│   │
+│   ├── 📂 MongoDB/                    # MongoDB with EJS UI (Full CRUD)
+│   │   ├── views/
+│   │   │   ├── form.ejs               # Form to add/edit student data
+│   │   │   └── home.ejs               # Homepage listing all records
+│   │   ├── DELETEAPI.js               # DELETE route handler
+│   │   ├── DataUI.js                  # Render data to UI
+│   │   ├── EDITAPI.js                 # Edit/update route handler
+│   │   ├── GETAPI.js                  # GET route handler
+│   │   ├── POSTAPI.js                 # POST route handler
+│   │   ├── RenderFormData.js          # Render form with existing data
+│   │   └── index.js                   # MongoDB section entry point
+│   │
+│   ├── .gitignore
+│   ├── package-lock.json
+│   └── package.json
+│
+└── Project/                           # Full-Stack Projects
     │
-    ├── 📂 Mongoose/                   # Mongoose ODM examples
-    │   ├── Model/
-    │   │   └── StudentModel.js        # Mongoose student model
-    │   ├── Schema/
-    │   │   └── StudentSchema.js       # Mongoose student schema
-    │   ├── DeleteAPI.js               # DELETE route with Mongoose
-    │   ├── GETAPI.js                  # GET route with Mongoose
-    │   ├── Mongoose.js                # Mongoose connection setup
-    │   ├── POSTAPI.js                 # POST route with Mongoose
-    │   └── PUTAPI.js                  # PUT route with Mongoose
-    │
-    ├── 📂 MongoDB/                    # MongoDB with EJS UI (Full CRUD)
-    │   ├── views/
-    │   │   ├── form.ejs               # Form to add/edit student data
-    │   │   └── home.ejs               # Homepage listing all records
-    │   ├── DELETEAPI.js               # DELETE route handler
-    │   ├── DataUI.js                  # Render data to UI
-    │   ├── EDITAPI.js                 # Edit/update route handler
-    │   ├── GETAPI.js                  # GET route handler
-    │   ├── POSTAPI.js                 # POST route handler
-    │   ├── RenderFormData.js          # Render form with existing data
-    │   └── index.js                   # MongoDB section entry point
-    │
-    ├── .gitignore
-    ├── package-lock.json
-    └── package.json
+    └── 📂 To-Do-List/                 # To-Do List App (Express + EJS + MongoDB)
+        │
+        ├── 📂 views/                  # EJS Template Views
+        │   ├── addTask.ejs            # Add new task form
+        │   ├── list.ejs               # Display all tasks
+        │   ├── navbar.ejs             # Navbar partial/include
+        │   └── update.ejs             # Edit/update task form
+        │
+        ├── .gitignore
+        ├── index.js                   # App entry point
+        ├── package-lock.json
+        └── package.json
+```
+
 ---
 
 ## 📚 Topics Covered
@@ -185,6 +202,54 @@ node.js-express-backend/
 | Data UI Render | `MongoDB/DataUI.js` |
 | EJS Views | `MongoDB/views/home.ejs`, `MongoDB/views/form.ejs` |
 | Entry Point (UI) | `MongoDB/index.js` |
+
+---
+
+## 📦 Packages & Dependencies
+
+### 🟢 Node.js Built-in Modules (No Install Needed)
+| Module | Works |
+|--------|-------|
+| `fs` | File system read/write/delete operations |
+| `path` | File & directory path utilities |
+| `os` | OS-level info like platform, memory, CPU |
+| `querystring` | Parse & stringify URL query strings |
+| `http` | Create basic HTTP servers without Express |
+
+---
+
+### 🔵 Core Packages
+| Package | Install | Works |
+|---------|---------|-------|
+| **Node.js** | [nodejs.org](https://nodejs.org/) | JavaScript runtime to run JS outside the browser |
+| **Express.js** | `npm install express` | Fast, minimal web framework for building servers & APIs |
+| **EJS** | `npm install ejs` | Template engine to render dynamic HTML with JavaScript |
+| **MongoDB** | [mongodb.com](https://www.mongodb.com/) | NoSQL database to store data in JSON-like documents |
+| **Mongoose** | `npm install mongoose` | ODM to interact with MongoDB using schemas & models |
+
+---
+
+### 🔧 Dev & Utility Packages
+| Package | Install | Works |
+|---------|---------|-------|
+| **Nodemon** | `npm install -g nodemon` | Auto-restarts server on file save during development |
+| **Morgan** | `npm install morgan` | HTTP request logger middleware for Express |
+| **CORS** | `npm install cors` | Allows cross-origin requests between different domains/ports |
+| **Multer** | `npm install multer` | Handles file uploads (images, PDFs, etc.) via forms |
+| **Colors** | `npm install colors` | Adds colored & styled output to Node.js terminal logs |
+| **Nodemailer** | `npm install nodemailer` | Send emails directly from Node.js (SMTP, Gmail, etc.) |
+
+---
+
+### ▶️ Quick Install — All at Once
+```bash
+# Install all project dependencies at once
+npm install express ejs mongoose morgan cors multer colors nodemailer
+
+# Install nodemon globally (dev tool)
+npm install -g nodemon
+```
+
 ---
 
 ## 🛠️ Getting Started
