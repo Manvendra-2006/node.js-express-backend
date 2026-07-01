@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+     <div class="home-page">
+        <h2>Welcome to About Page</h2>
+        <p>Your One Step Solution From Awesome Content........</p>
+        <a href="#" class="link">Get Started</a>
+    </div>
+    <div class="footer">
+        <p>&copy:2025 MySite. All rights reserved.....</p>
+    </div>
+</body>
+</html>
